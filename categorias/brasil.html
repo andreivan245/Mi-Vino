@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styless.css">
+    
+    
+    <title>Mi Vino</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">
+    
+        <img src="../img/logo.png" width="90" height="90" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="../store/store.html">Loja</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../footer/sobre.html">Sobre o Mi Vino</a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-5 mr-5">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-3 my-sm-0" type="submit"><img class ="mx-auto d-block" src="../img/search.png" alt=""></button>
+        </form>
+        <div class="nav-icon fa-1x fa-layers-counter mb-2">
+        
+            <a class="btn btn-light" href="../carrinho/carrinho.html">
+            <div class="noti mx-center"><span class="badge badge-dark ml-5"></span></div> <i class="fas fa-shopping-cart fa-2x"></i>
+            </a>
+            
+            
+        </div>
+        
+        </div>
+    </div>
+    </nav>
+<div class="container-fluid mt-2">
+    <div class="row">
+        <div class="col-sm-2  mt-2 shadow-sm p-3 mb-5 bg-white rounded category">
+            <h2>Categorias</h2><br>
+                <h4>Uva</h4><br>
+                <div id="list-example" class="list-group">
+                  
+                  <a class="list-group-item list-group-item-action"  href="./shiraz.html">Shiraz</a>
+              <a class="list-group-item list-group-item-action" href="./malbec.html">Malbec</a>
+              <a class="list-group-item list-group-item-action"  href="./cs.html">Cabernet Sauvignon</a>
+              <a class="list-group-item list-group-item-action"  href="./merlot.html">Merlot</a>
+              <a class="list-group-item list-group-item-action"  href="./pinot.html">Pinot Noir</a>
+              <a class="list-group-item list-group-item-action"  href="./bouschet.html">Bouschet</a>
+              <a class="list-group-item list-group-item-action"  href="./tempranillo.html">Tempranillo</a>
+              <a class="list-group-item list-group-item-action"  href="./cf.html">Cabernet Franc</a>
+              <a class="list-group-item list-group-item-action"  href="./carmenere.html">Carmenere</a>
+              <a class="list-group-item list-group-item-action"  href="./zinfandel.html">Zinfandel</a>
+
+                </div>
+        <br> <h4>Países</h4><br>
+            <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="./chile.html">Chile</a>
+            <a class="list-group-item list-group-item-action" href="./brasil.html">Brasil</a>
+            <a class="list-group-item list-group-item-action" href="./argentina.html">Argentina</a>
+            <a class="list-group-item list-group-item-action" href="./EUA.html">EUA</a>
+            
+            </div>
+        </div>
+    <div class="col mt-2 produtos">
+        <div class="row mx-md-n5 py-3">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-7.html"> <img class="card-img-top" src="../img/vinhos/LA CLÁSSICO MERLOT.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">La Clássico Merlot</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 75,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('La Clássico Merlot', document.getElementById('qtd7').value,  '75.00', 7)"> Comprar </button>
+                  <input type="number" value="1" min="1" max="10" id="qtd7">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show" href="../store/vinho-8.html"><img class="card-img-top" src="../img/vinhos/LA JOVEM SHIRAZ.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">La Jovem Shiraz</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 75,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('La Jovem Shiraz', document.getElementById('qtd8').value,  '75.00', 8)"> Comprar </button>
+                      <input type="number" value="1" min="1" max="10" id="qtd8">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-9.html"><img class="card-img-top" src="../img/vinhos/ALMA ÚNICA SYRAH.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Alma Única Syrah</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 125,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Alma Única Syrah', document.getElementById('qtd9').value,  '125.00', 9)"> Comprar </button>
+                  <input type="number" value="1" min="1" max="10" id="qtd9">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row mx-md-n5 py-3">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-10.html"> <img class="card-img-top" src="../img/vinhos/ALMA ÚNICA PINOT NOIR.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Alma Única Pinot Noir</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 95,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Alma Única Pinot Noir', document.getElementById('qtd10').value,  '95.00', 10)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd10">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show img-responsive" href="../store/vinho-11.html"> <img class="card-img-top" src="../img/vinhos/ALMA ÚNICA MERLOT.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">Alma Única Merlot</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 105,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Alma Única Merlot', document.getElementById('qtd11').value,  '105.00', 11)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd11">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-12.html"><img class="card-img-top" src="../img/vinhos/PIZZATO RESERVA MERLOT.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Pizzato Reserva Merlot</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 105,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Pizzato Reserva Merlot', document.getElementById('qtd12').value,  '105.00', 12)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd12">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row mx-md-n5 py-3">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-13.html"><img class="card-img-top" src="../img/vinhos/PIZZATO RESERVA ALICANTE BOUSCHET.jpeg" alt="Imagem de capa do card">
+                <h5 class="card-header">Pizzato Reserva Alicante Bouschet</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 115,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Pizzato Reserva Alicante Bouschet', document.getElementById('qtd13').value,  '115.00', 13)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd13">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show" href="../store/vinho-14.html"><img class="card-img-top" src="../img/vinhos/FAUSTO VERVE.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">Fausto Verve</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 125,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Fausto Verve', document.getElementById('qtd14').value,  '125.00', 14)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd14">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-15.htmll"> <img class="card-img-top" src="../img/vinhos/DÁDIVAS PINOT NOIR.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Dádivas Pinot Noir</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 95,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Dádivas Pinot Noir', document.getElementById('qtd15').value,  '95.00', 15)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd15">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row mx-md-n5 py-3">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-16.html"><img class="card-img-top" src="../img/vinhos/DÁDIVAS TEMPRANILLO.png" alt="Imagem de capa do card">
+                <h5 class="card-header">Dádivas Tempranillo</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 95,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Dádivas Tempranillo', document.getElementById('qtd16').value,  '95.00', 16)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd16">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show" href="../store/vinho-17.html"> <img class="card-img-top" src="../img/vinhos/TERROIR CABERNET FRANC.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">Terroir Cabernet Franc</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 95,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Terroir Cabernet Franc', document.getElementById('qtd17').value,  '95.00', 17)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd17">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-18.htmll"><img class="card-img-top" src="../img/vinhos/TERROIR MERLOT.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Terroir Merlot</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 95,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Terroir Merlot', document.getElementById('qtd18').value,  '95.00', 18)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd18">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row mx-md-n5 py-3">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-19.html"><img class="card-img-top" src="../img/vinhos/TERROIR CABERNET SAUVIGON.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Terroir Cabernet Sauvigon</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 95,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Terroir Cabernet Sauvigon', document.getElementById('qtd19').value,  '95.00', 19)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd19">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show" href="../store/vinho-20.html"><img class="card-img-top" src="../img/vinhos/JOAQUIM.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">Joaquim</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 85,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Joaquim', document.getElementById('qtd20').value,  '85.00', 20)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd20">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-21.html"><img class="card-img-top" src="../img/vinhos/FRANCESCO.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Francesco</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 105,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Francesco', document.getElementById('qtd21').value,  '105.00', 21)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd21">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row mx-md-n5 py-2">
+            <div class="col px-md-5">
+              <div class="card" style="width: 15rem;">
+                <a class="show" href="../store/vinho-22.html"><img class="card-img-top" src="../img/vinhos/TORII CABERNET SAUVIGON.jpg" alt="Imagem de capa do card">
+                <h5 class="card-header">Torii Cabernet Sauvigon</h5></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$ 85,00</h5>
+                  <p class="card-text">Alguma coisa</p>
+                  <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Torii Cabernet Sauvigon', document.getElementById('qtd22').value,  '85.00', 22)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd22">
+                </div>
+              </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;">
+                  <a class="show" href="../store/vinho-23.html"><img class="card-img-top" src="../img/vinhos/ALÉM MAR.jpg" alt="Imagem de capa do card">
+                    <h5 class="card-header">Além Mar</h5></a>
+                    <div class="card-body">
+                      <h5 class="card-title">R$ 110,00</h5>
+                      <p class="card-text">Alguma coisa</p>
+                      <button type="button" class="btn btn-success mr-4" id="adicionar1" id="produto1" onclick="AddCarrinho1('Além Mar', document.getElementById('qtd23').value,  '110.00', 23)"> Comprar </button><input type="number" value="1" min="1" max="10" id="qtd23">
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="card" style="width: 15rem;"></div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+</div>
+</div>
+    
+    <footer>
+        <div class="border-top shadow footer container-fluid">
+        
+            <div class="row">
+            <div class="col-sm-2 my-4 ml-5">
+            <h6 ><a href="../store/store.html">Loja</a></h6>
+            </div>
+            <div class="col-sm-2 my-4 mr-2">
+            <h6><a href="../footer/fale.html">Fale Conosco</a></h6>
+            </div>
+            <div class="col-sm-2 my-4">
+            <h6><a href="../carrinho/carrinho.html">Meu carrinho</a></h6>
+            </div>
+            <div class="col-sm-2 my-4">
+            <h6><a href="../footer/termos.html">Termos de Uso</a></h6>
+            </div>
+            <div class="col-sm-2 my-4 redes-sociais">
+            <h6><a class="link">Redes Sociais</a></h6>
+            <div class="mt-4">
+                <a href="https://www.whatsapp.com/?lang=pt_br"><img src="../img/zap.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="../img/insta.png" alt=""></a>
+                <a href="https://twitter.com/home"><img src="../img/tt.png" alt=""></a> 
+                <a href="https://www.facebook.com/"><img src="../img/face.png" alt=""></a>
+            </div>
+
+            </div>
+            </div>
+            <p class="pt-5 copy ml-5"><strong>VINHO BRASIL, Av. das Américas, 777 - Bloco 7 – 7º andar – Taguatinga, Brasília/DF - 72000</strong></p>
+        
+        </div>
+    </footer>
+
+ 
+<script src="../js/script.js"></script>
+<script src="https://kit.fontawesome.com/b18d144d74.js" crossorigin="anonymous"></script>
+<script src="/store/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

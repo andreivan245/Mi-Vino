@@ -1,0 +1,42 @@
+.container {
+    max-width: 1100px;
+  }
+ 
+
+  .category {
+    background-color: rgb(224, 224, 224);
+  }
+  @media (max-width: 576px) { 
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+
+    }
+    .nav-icon {
+      visibility: hidden;
+    }
+}
+.show:link {
+  color: black;
+  text-decoration:none; 
+ 
+}
+.show:visited {
+  color: black;
+  text-decoration:none; 
+ 
+}
+.copy{
+  font-size: 12px;
+  color: gray;
+}
+
+.jojo {
+  display: inline-block;
+}
+.texto-destaque h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  color: #5f2c3d;
+}
